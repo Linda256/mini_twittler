@@ -6,7 +6,7 @@ var twittler = function() {
 
     var index = tweets.length - 1;
     var numTweets = 0;
-    while(index >= 0 && numTweets < 200){
+    while(index >= 0 && numTweets < 20){
       var tweet = tweets[index];
       var $tweet = $('<div class="tweet"><span class="user"></span><span class="message"></span></div>');
 
@@ -29,7 +29,7 @@ var twittler = function() {
   };
 
   var displayUserTweets = function(user) {
-    $('.refresh-button').text('Show Feed');
+    $('.refresh-button').text('More Tweet');
     displayTweets(streams.users[user]);    
   };
 
